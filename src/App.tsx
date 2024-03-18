@@ -1,6 +1,10 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import HelloWorld from './HelloWorld';
+import ButtonCounter from './ButtonCounter';
+
+
 
 function App() {
   return (
@@ -18,6 +22,10 @@ function App() {
         >
           Learn React
         </a>
+        <HelloWorld message='World'></HelloWorld>
+        <HelloWorld message='Class'></HelloWorld>
+        <HelloWorld message='Students'></HelloWorld>
+        <ButtonCounter></ButtonCounter>
       </header>
     </div>
   );
