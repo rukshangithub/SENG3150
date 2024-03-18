@@ -15,7 +15,7 @@ const ButtonCounter = () => {
 
         return (
             <>
-            <Button onClick={handleIncrement}> Increment </Button>
+            <Button Color="Green" onClick={handleIncrement}> Increment </Button>
             You have clicked {clickCount} times
             <Button onClick={handleDecrement}> Decrement </Button>
 
