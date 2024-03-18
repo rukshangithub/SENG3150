@@ -3,13 +3,14 @@ import React, {MouseEvent, ReactNode} from "react";
 type Props = 
 {
  onClick(e: MouseEvent<HTMLElement>): void, 
- children:ReactNode
+ children:ReactNode,
+ Color?: string
 }
 
- const Button: React.FC<Props> = ({onClick, children}) =>
+ const Button: React.FC<Props> = ({onClick, children, Color}) =>
  {
     return (
-        <button onClick={onClick}> {children} </button>
+        <button style={{backgroundColor:Color}} onClick={onClick}> {children} </button>
     );
  };
 
