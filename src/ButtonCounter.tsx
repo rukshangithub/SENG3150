@@ -9,10 +9,16 @@ const ButtonCounter = () => {
             setClickCount(clickCount + 1);
         };
  
+        const handleDecrement = () => {
+            setClickCount(clickCount - 1);
+        };
+
         return (
             <>
             <Button onClick={handleIncrement}> Increment </Button>
             You have clicked {clickCount} times
+            <Button onClick={handleDecrement}> Decrement </Button>
+
             </>
         )
 };
